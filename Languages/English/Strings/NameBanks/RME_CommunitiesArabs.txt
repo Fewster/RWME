@@ -1,0 +1,8 @@
+Town
+City
+Castle
+Garrison
+Wilayah
+Majar
+Arg
+Vahram
