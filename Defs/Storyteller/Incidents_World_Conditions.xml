@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<IncidentDef>
+    <defName>Eclipse</defName>
+    <label>eclipse</label>
+		<category>Misc</category>
+    <targetTypes>
+      <li>World</li>
+    </targetTypes>
+    <workerClass>IncidentWorker_MakeGameCondition</workerClass>
+    <gameCondition>Eclipse</gameCondition>
+    <letterLabel>Eclipse</letterLabel>
+    <letterText>The sun god is angry... We're consumed in darkness!</letterText>
+    <letterDef>NegativeEvent</letterDef>
+    <baseChance>1.5</baseChance>
+    <minRefireDays>15</minRefireDays>
+    <durationDays>
+      <min>0.75</min>
+      <max>1.25</max>
+    </durationDays>
+    <tale>Eclipse</tale>
+  </IncidentDef>
+
+  <IncidentDef>
+    <defName>SolarFlare</defName>
+    <label>solar flare</label>
+		<category>Misc</category>
+    <targetTypes>
+      <li>World</li>
+    </targetTypes>
+    <workerClass>IncidentWorker_MakeGameCondition</workerClass>
+    <gameCondition>SolarFlare</gameCondition>
+    <letterLabel>Solar flare</letterLabel>
+    <letterText>The sun god has defeated the darkness! But now there is no night!</letterText>
+    <letterDef>NegativeEvent</letterDef>
+    <baseChance>1.3</baseChance>
+    <minRefireDays>15</minRefireDays>
+    <durationDays>
+      <min>0.15</min>
+      <max>0.5</max>
+    </durationDays>
+  </IncidentDef>
+
+</Defs>

@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<FactionDef Abstract="True" Name="AdventurerBase">
+		<label>adventurer</label>
+		<description>People from the distant reaches of the world.</description>
+		<pawnsPlural>adventurers</pawnsPlural>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<fixedName>Adventurer</fixedName>
+		<techLevel>Medieval</techLevel>
+		<backstoryCategory>Civil</backstoryCategory>
+		<hidden>true</hidden>
+		<rescueesCanJoin>true</rescueesCanJoin>
+		<autoFlee>false</autoFlee>
+		<geneticVariance>1</geneticVariance>
+		<hairTags>
+			<li>Urban</li>
+		</hairTags>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Synthread</li>
+				<li>Hyperweave</li>
+			</thingDefs>
+		</apparelStuffFilter>
+	</FactionDef>
+
+	<FactionDef ParentName="AdventurerBase">
+		<defName>Adventurer</defName>
+  </FactionDef>
+
+  <FactionDef ParentName="AdventurerBase">
+    <defName>Adventurer</defName>
+    <startingGoodwill>
+      <min>-100</min>
+      <max>-100</max>
+    </startingGoodwill>
+    <naturalColonyGoodwill>
+      <min>-100</min>
+      <max>-100</max>
+    </naturalColonyGoodwill>
+  </FactionDef>
+
+  <FactionDef>
+    <defName>Mechanoid</defName>
+    <label>mechanoid hive</label>
+    <description>A hive of ancient self-replicating machines.</description>
+    <pawnsPlural>mechanoids</pawnsPlural>
+    <requiredCountAtGameStart>0</requiredCountAtGameStart>
+    <fixedName>a mechanoid hive</fixedName>
+		<raidCommonalityFromPointsCurve>
+			<points>
+				<li>(0, 0)</li>
+				<li>(0, 0)</li>
+			</points>
+		</raidCommonalityFromPointsCurve>
+    <humanlikeFaction>false</humanlikeFaction>
+    <hidden>true</hidden>
+    <autoFlee>false</autoFlee>
+    <canUseAvoidGrid>false</canUseAvoidGrid>
+    <techLevel>Ultra</techLevel>
+    <earliestRaidDays>4500000</earliestRaidDays>
+    <startingGoodwill>
+      <min>-100</min>
+      <max>-100</max>
+    </startingGoodwill>
+    <mustStartOneEnemy>true</mustStartOneEnemy>
+    <naturalColonyGoodwill>
+      <min>-100</min>
+      <max>-100</max>
+    </naturalColonyGoodwill>
+		<maxPawnOptionCostFactor>3.0</maxPawnOptionCostFactor>
+    <pawnGroupMakers>
+      <li>
+        <kindDef>Normal</kindDef>
+        <options>
+            <Centipede>0</Centipede>
+            <Scyther>0</Scyther>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <homeIconPath>World/WorldObjects/DefaultFactionBase</homeIconPath>
+    <allowedArrivalTemperatureRange>
+      <min>-100</min>
+      <max>0</max>
+    </allowedArrivalTemperatureRange>
+  </FactionDef>
+
+  <FactionDef>
+    <defName>Insect</defName>
+    <label>insects</label>
+    <description>Usually aggressive and intrusive insects.</description>
+    <pawnsPlural>insects</pawnsPlural>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <fixedName>insects</fixedName>
+		<raidCommonalityFromPointsCurve>
+			<points>
+				<li>(0, 0)</li>
+			</points>
+		</raidCommonalityFromPointsCurve>
+    <humanlikeFaction>false</humanlikeFaction>
+    <hidden>true</hidden>
+    <autoFlee>false</autoFlee>
+    <canUseAvoidGrid>false</canUseAvoidGrid>
+    <techLevel>Animal</techLevel>
+    <startingGoodwill>
+      <min>-100</min>
+      <max>-100</max>
+    </startingGoodwill>
+    <mustStartOneEnemy>true</mustStartOneEnemy>
+    <naturalColonyGoodwill>
+      <min>-100</min>
+      <max>-100</max>
+    </naturalColonyGoodwill>
+    <homeIconPath>World/WorldObjects/DefaultFactionBase</homeIconPath>
+    <allowedArrivalTemperatureRange>
+      <min>0</min>
+      <max>45</max>
+    </allowedArrivalTemperatureRange>
+  </FactionDef>
+  
+</Defs>

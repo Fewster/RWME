@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--/ Picts \-->
+  
+  <RulePackDef>
+    <defName>NamerFactionPicts</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name->The [place]s</li>
+        <li>name->The [gods] Men</li>
+        <li>name->The [person]s of [place]</li>
+        <li>name->The [person]s of [gods]</li>
+        <li>name->The [person]s</li>
+        <li>name->The [rmeadjective] [person]s</li>
+        <li>name->The [rmeadjective] [gods]'s</li>
+      </rulesStrings>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>place</keyword>
+          <path>NameBanks/Places_Pict</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>person</keyword>
+          <path>NameBanks/Persons_Pict</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>gods</keyword>
+          <path>NameBanks/Gods_Gaelic-Pict</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>rmeadjective</keyword>
+          <path>NameBanks/RME_Adjectives</path>
+        </li>
+      </rulesRaw>
+    </rulePack>
+  </RulePackDef>
+  
+  <!--/ Picts Base Names \-->
+  
+  <RulePackDef>
+    <defName>NamerFactionBasePicts</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name->[place]</li>
+        <li>name->A Pict [rmecommunity]</li>
+      </rulesStrings>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>place</keyword>
+          <path>NameBanks/Places_Pict</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>rmecommunity</keyword>
+          <path>NameBanks/RME_Communities</path>
+        </li>        
+      </rulesRaw>
+    </rulePack>
+  </RulePackDef>
+
+  <!--/Arabic Caliphate\-->
+  
+  <RulePackDef>
+    <defName>NamerFactionArabs</defName>
+    <rulePack>
+      	<rulesStrings>
+         <li>name->Kingdom of Caliph [person]</li>
+         <li>name->Kingdom of [place]</li>
+         <li>name->Caliphate of Caliph [person]</li>
+         <li>name->[person]s Caliphate</li>
+    	</rulesStrings>
+     <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>place</keyword>
+          <path>NameBanks/Places_Arabs</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>person</keyword>
+          <path>NameBanks/Persons_Arabs</path>
+        </li>
+      </rulesRaw>
+    </rulePack>
+  </RulePackDef>
+  
+  <!--/Arabic Caliphate Basenames\-->
+  
+   <RulePackDef>
+    <defName>NamerFactionBaseArabs</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name->[place]</li>
+        <li>name->[arabcommunities] of [place]</li>
+      </rulesStrings>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>place</keyword>
+          <path>NameBanks/Places_Arabs</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>arabcommunities</keyword>
+          <path>NameBanks/RME_CommunitiesArabs</path>
+        </li>
+      </rulesRaw>
+    </rulePack>
+  </RulePackDef>
+
+  
+  <!--/Generic Town\-->
+  
+  <RulePackDef>
+    <defName>NamerFactionBaseTownsmen</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name->[townname] [rmecommunity]</li>
+        <li>name->[rmecommunity] of [townname]</li>
+      </rulesStrings>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>townname</keyword>
+          <path>NameBanks/RME_TownNames</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>rmecommunity</keyword>
+          <path>NameBanks/RME_Communities</path>
+        </li>
+      </rulesRaw>
+    </rulePack>
+  </RulePackDef>
+  
+    <!--/Generic Town\-->
+  
+  <RulePackDef>
+    <defName>NamerFactionTownsmen</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name->Kingdom of [townname]</li>
+      </rulesStrings>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>townname</keyword>
+          <path>NameBanks/RME_TownNames</path>
+        </li>
+      </rulesRaw>
+    </rulePack>
+  </RulePackDef>
+  
+</Defs>

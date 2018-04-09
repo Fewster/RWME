@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!-- PICTISH -->
+  <PawnKindDef Name="PictishBase" Abstract ="True">
+    <defName>PictishBase</defName>
+    <label>Pictish</label>
+    <race>Human</race>
+    <defaultFactionType>Picts</defaultFactionType>
+    <backstoryCategory>Tribe</backstoryCategory>
+    <baseRecruitDifficulty>0.80</baseRecruitDifficulty>
+    <chemicalAddictionChance>0</chemicalAddictionChance>
+    <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+    <invNutrition>2.55</invNutrition>
+    <combatPower>60</combatPower>
+    <gearHealthRange>
+      <min>0.2</min>
+      <max>0.6</max>
+    </gearHealthRange>
+    <itemQuality>Shoddy</itemQuality>
+    <apparelTags>
+      <li>Tribal</li>
+    </apparelTags>
+    <apparelMoney>
+      <min>300</min>
+      <max>900</max>
+    </apparelMoney>
+    <apparelAllowHeadwearChance>0.2</apparelAllowHeadwearChance>
+    <weaponMoney>
+       <min>600</min>
+       <max>1000</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>NeolithicMeleeBasic</li>
+    </weaponTags>
+    <techHediffsMoney>
+      <min>0</min>
+      <max>35</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Simple</li>
+    </techHediffsTags>
+    <techHediffsChance>0.1</techHediffsChance>
+    <inventoryOptions>
+      <skipChance>0.9</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>30</min>
+            <max>70</max>
+          </countRange>
+        </li>
+        <li>
+          <thingDef>Medicine</thingDef>
+          <countRange>
+            <min>1</min>
+            <max>1</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="PictishBase">
+    <defName>PictishWarrior</defName>
+    <label>Pictish Warrior</label>
+    <weaponTags>
+      <li>NeolithicMeleeAdvanced</li>
+    </weaponTags>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="PictishBase">
+    <defName>PictishHunter</defName>
+    <label>Pictish Hunter</label>
+    <baseRecruitDifficulty>0.65</baseRecruitDifficulty>
+    <weaponTags>
+      <li>NeolithicRangedHunter</li>
+    </weaponTags>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="PictishBase">
+    <defName>PictishBraveheart</defName>
+    <label>Pictish Braveheart</label>
+    <combatPower>80</combatPower>
+    <baseRecruitDifficulty>1</baseRecruitDifficulty>
+    <apparelTags>
+      <li>Tribal</li>
+    </apparelTags>
+    <weaponTags>
+      <li>NeolithicMeleeAdvanced</li>
+    </weaponTags>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="PictishBase">
+    <defName>PictishElders</defName>
+    <label>Pictish Elder</label>
+    <factionLeader>true</factionLeader>
+    <combatPower>75</combatPower>
+    <baseRecruitDifficulty>0.90</baseRecruitDifficulty>
+    <weaponTags>
+		<li>NeolithicRanged</li>
+		<li>NeolithicMeleeAdvanced</li>
+    </weaponTags>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="PictishBase">
+    <defName>PictishTrader</defName>
+    <label>Pictish Trader</label>
+    <trader>true</trader>
+  </PawnKindDef>
+  
+  <!-- ARABIC -->
+  
+	<PawnKindDef Name="ArabicBase" Abstract ="True">
+	   <defName>ArabicBase</defName>
+	   <label>Arab</label>
+	   <race>Human</race>
+	   <defaultFactionType>Caliphate</defaultFactionType>
+	   <backstoryCategory>Civil</backstoryCategory>
+	   <chemicalAddictionChance>0.10</chemicalAddictionChance>
+	   <backstoryCryptosleepCommonality>0.001</backstoryCryptosleepCommonality>
+	    <invNutrition>2.55</invNutrition>
+	    <combatPower>70</combatPower>
+	    <gearHealthRange>
+	      <min>0.2</min>
+	      <max>0.6</max>
+	    </gearHealthRange>
+	    <itemQuality>Good</itemQuality>
+		<apparelTags>
+			<li>Outlander</li>
+		</apparelTags>
+	    <apparelMoney>
+	      <min>300</min>
+	      <max>900</max>
+	    </apparelMoney>
+	    <apparelAllowHeadwearChance>0.2</apparelAllowHeadwearChance>
+	    <weaponMoney>
+	       <min>600</min>
+	       <max>1000</max>
+	    </weaponMoney>
+	    <weaponTags>
+			<li>NeolithicMeleeBasic</li>
+	    </weaponTags>
+	    <techHediffsMoney>
+	      <min>0</min>
+	      <max>35</max>
+	    </techHediffsMoney>
+	    <techHediffsTags>
+	      <li>Simple</li>
+	    </techHediffsTags>
+	    <techHediffsChance>0.1</techHediffsChance>
+	    <inventoryOptions>
+	      <skipChance>0.9</skipChance>
+	      <subOptionsChooseOne>
+	        <li>
+	          <thingDef>Silver</thingDef>
+	          <countRange>
+	            <min>30</min>
+	            <max>140</max>
+	          </countRange>
+	        </li>
+	        <li>
+	          <thingDef>Medicine</thingDef>
+	          <countRange>
+	            <min>1</min>
+	            <max>2</max>
+	          </countRange>
+	        </li>
+	      </subOptionsChooseOne>
+	    </inventoryOptions>
+	  </PawnKindDef>
+
+	  <PawnKindDef ParentName="ArabicBase">
+	    <defName>ArabicWarrior</defName>
+	    <label>Arabic Warrior</label>
+	   	<baseRecruitDifficulty>0.80</baseRecruitDifficulty>	    
+	    <weaponTags>
+	      <li>NeolithicMeleeAdvanced</li>
+	    </weaponTags>
+	  </PawnKindDef>
+	
+	  <PawnKindDef ParentName="ArabicBase">
+	    <defName>ArabicHunter</defName>
+	    <label>Arabic Archer</label>
+	   	<baseRecruitDifficulty>0.80</baseRecruitDifficulty>	    
+	    <weaponTags>
+	      <li>NeolithicRanged</li>
+	    </weaponTags>
+	  </PawnKindDef>
+	  
+	  <PawnKindDef ParentName="ArabicBase">
+	    <defName>ArabicArifs</defName>
+	    <label>Arifs</label>
+	    <baseRecruitDifficulty>0.95</baseRecruitDifficulty>
+	    <combatPower>75</combatPower>
+      <factionLeader>true</factionLeader>	
+	    <weaponTags>
+	      <li>NeolithicMeleeAdvanced</li>
+	    </weaponTags>
+	  </PawnKindDef>	  
+	
+	  <PawnKindDef ParentName="ArabicBase">
+	    <defName>ArabicMubarizun</defName>
+	    <label>Mubarizun</label>
+	    <baseRecruitDifficulty>1</baseRecruitDifficulty>
+	    <combatPower>85</combatPower>	
+	    <weaponTags>
+	      <li>NeolithicMeleeAdvanced</li>
+	    </weaponTags>
+	  </PawnKindDef>
+		
+	  <PawnKindDef ParentName="ArabicBase">
+	    <defName>ArabicTrader</defName>
+	    <label>Arabic Trader</label>
+	    <trader>true</trader>
+	  </PawnKindDef>
+	
+
+</Defs>
